@@ -15,7 +15,7 @@ function App() {
   const getAllMcs = async () => {
     try {
       const response = await axios.get(
-        'http://localhost:3111/api/v1/mcdonalds'
+        'https://mcs-backend.herokuapp.com/api/v1/mcdonalds'
       );
       setMcStores(response.data);
     } catch (error) {
@@ -26,7 +26,7 @@ function App() {
   const getFilteredMcs = async (searchedWorld) => {
     try {
       const response = await axios.get(
-        `http://localhost:3111/api/v1/mcdonalds/${searchedWorld.toUpperCase()}`
+        `https://mcs-backend.herokuapp.com/api/v1/mcdonalds/${searchedWorld.toUpperCase()}`
       );
       setFilteredStoresList(response.data);
     } catch (error) {

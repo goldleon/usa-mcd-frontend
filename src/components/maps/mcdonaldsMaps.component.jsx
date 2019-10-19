@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import GoogleMapReact from 'google-map-react';
 
 import './mcdonaldsMaps.styles.scss';
@@ -14,14 +14,7 @@ const McDonaldsMaps = ({error, filteredStoresList, hoverKey}) => {
 		lng: -87.6500523,
 	});
 	const [zoom, setZoom] = useState(5);
-	// useEffect(() => {
-	// 	if (filteredStoresList.length > 0) {
-	// 		setCenter({
-	// 			lat: parseFloat(filteredStoresList[0][1]),
-	// 			lng: parseFloat(filteredStoresList[0][0]),
-	// 		});
-	// 	}
-	// }, [filteredStoresList]);
+
 	return (
 		<div className="maps">
 			<GoogleMapReact
