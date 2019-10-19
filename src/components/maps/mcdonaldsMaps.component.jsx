@@ -13,7 +13,7 @@ const McDonaldsMaps = ({error, filteredStoresList, hoverKey}) => {
 		lat: 41.850033,
 		lng: -87.6500523,
 	});
-	const [zoom, setZoom] = useState(5);
+	const [zoom, setZoom] = useState(4);
 
 	return (
 		<div className="maps">
