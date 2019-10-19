@@ -1,22 +1,53 @@
 .App {
-  text-align: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left-component{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  width: 15%;
 }
 
-.App-link {
-  color: #09d3ac;
+.mcStores{
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.mcStore-item {
+  padding: 10px 10px;    
+}
+
+.search-component{
+  height: 10%;
+  width: 90%;
+  position: sticky;
+  padding: 10px;
+}
+
+.search-component label {
+  width: 100%;
+  height: 25px;
+}
+
+.search-component input {
+  width: 90%;
+  height: 25px;
+  margin-left: 5%;
+  margin-right: 5%;
+} 
+
+.right-component{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 85%
 }
